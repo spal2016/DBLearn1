@@ -1,2 +1,4 @@
 # Databricks notebook source
-print("I'm running Python!")
+files = dbutils.fs.ls(f"{DA.paths.datasets}/nyctaxi-with-zipcodes/data")
+display(files)
+
